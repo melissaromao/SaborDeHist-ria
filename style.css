@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --vermelho: #CA221F;
+    --vermelho-escuro: #590F0C;
+    --amarelo: #FEAD26;
+    --verde: #94cc66;
+    --bege: #FFFDC0;
+    --cinza: #ccc;
+}
+
+body {
+    margin: 0;
+    background-color: var(--vermelho);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.active {
+    opacity: 100%;
+    background-color: var(--vermelho-escuro);
+    border-radius: 0px 0px 25px 25px;
+    color: #ffff;
+}
+
+.active:hover {
+    color: #ffff;
+    background-color: var(--amarelo);
+    transition: 1s;
+    border-top: 2em solid var(--amarelo);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    float: left;
+    padding-left: 10px;
+}
+
+
+nav li a {
+    display: block;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 70%;
+}
+
+nav li a:hover {
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: var(--vermelho-escuro);
+    margin: 0;
+}
+
+.capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+#sobre {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#sobre h1 {
+    color: var(--vermelho-escuro);
+    font-size: 40px;
+    padding: 40px 0 0 0;
+}
+
+#sobre p,
+h4 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#sobre p b {
+    color: var(--vermelho);
+}
+
+#sobre p b:hover {
+    color: #FEAD26;
+    transition: 0.5s;
+}
+
+
+.sobretxt {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px 0px 90px;
+}
+
+.esquerda_direita {
+    width: 50%;
+    text-align: left;
+    margin: 25px;
+}
+
+
+#contato {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contato h1 {
+    color: var(--vermelho-escuro);
+    font-size: 40px;
+    padding: 40px 0 0 0;
+}
+
+#contato p,
+h4 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#contato p b {
+    color: var(--vermelho);
+    cursor: pointer;
+}
+
+.contato {
+    margin: 30px;
+}
+
+.contato .info {
+    word-spacing: 325px;
+}
+
+#contato form {
+    border: 1px solid var(--cinza);
+    padding: 50px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    border: 1px solid var(--cinza);
+    padding: 5px;
+    border-radius: 5px;
+    width: 360px;
+    margin-right: 15px;
+}
+
+input[type=email] {
+    border: 1px solid var(--cinza);
+    padding: 5px;
+    border-radius: 5px;
+    width: 360px;
+    margin-right: 30px;
+}
+
+input[type=password] {
+    border: 1px solid var(--cinza);
+    padding: 5px;
+    border-radius: 5px;
+    width: 360px;
+    margin-right: 30px;
+}
+
+textarea {
+    width: 740px;
+    border: 1px solid var(--cinza);
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contato input[type=submit] {
+    margin-top: 7px;
+    width: 765px;
+    padding: 10px;
+    border: none;
+    background-color: var(--vermelho);
+    border-radius: 7px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+}
+
+#contato input[type=submit]:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--vermelho-escuro);
+}
+
+#login {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 50px;
+    width: 900px;
+    background-color: white;
+    color: black;
+    border: 1px solid var(--cinza);
+    border-radius: 10px ;
+}
+
+.conteudo h1 {
+    color: var(--vermelho);
+    font-family: 'Poppins';
+    text-align: center;
+    margin-left: 100px;
+}
+
+.conteudo b {
+    color: var(--vermelho);
+
+}
+
+.formlogin {
+    width: 65%;
+}
+
+.formlogin input[type=submit] {
+    margin-top: 10px;
+    width: 371px;
+    padding: 10px;
+    border: none;
+    background-color: var(--verde);
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+}
+
+.formlogin input[type=submit]:hover {
+  cursor: pointer;
+  background-color: #73be35;
+}
+
+.formlogin a {
+    text-decoration: none;
+}
+
+.formlogin b:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 35%;
+    text-align: right;
+}
+
+
+#receitas {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#receitas h1 {
+    color: var(--vermelho-escuro);
+    font-size: 40px;
+    padding: 40px 0 0 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.card {
+    width: calc(30% - 20px);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: var(--bege); 
+    padding: 20px;
+    box-sizing: border-box; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(110, 110, 110, 0.1); /* Sombra sutil */
+}
+
+.card a {
+    text-decoration: none;
+    background-color: var(--verde);
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.card .embreve {
+    text-decoration: none;
+    background-color: var(--amarelo);
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.card .embreve:hover {
+    text-decoration: none;
+    background-color: var(--cinza);
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.card a:hover {
+    transition: 0.5s;
+    background-color: #73be35;
+}
+
+#receita {
+    background-color: var(--bege);
+}
+
+#receita li a {
+    color: var(--vermelho-escuro);
+}
+
+#receita h1 {
+    color: var(--vermelho-escuro);
+}
+
+#receita .active {
+    color: var(--bege);
+}
+
+#receita .active:hover {
+    color: var(--bege);
+    background-color: var(--vermelho);
+    transition: 1s;
+    border-top: 2em solid var(--vermelho);
+}
+
+.tabela {
+    margin: 30px;
+}
+
+table {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+th {
+    width: 300px;
+    color: var(--vermelho);
+}
+
+td {
+    border-right: 20px solid white;
+    border-bottom: 1px solid var(--cinza);
+}
+
+.modo {
+    margin: 30px 0px 0px 250px; 
+    padding-left: 10px;
+}
+
+#receita b {
+    color: var(--vermelho);
+}
+
+#receita p {
+    text-align: justify;
+}
