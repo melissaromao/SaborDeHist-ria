@@ -1,2 +1,2 @@
 # Sabor de História
-Um lugar onde os sabores se entrelaçam com narrativas emocionantes.
+1° Projeto Web (Fatec Cotia) | Um lugar onde os sabores se entrelaçam com narrativas emocionantes.
